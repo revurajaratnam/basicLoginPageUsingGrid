@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+
+        }
+        .nav .menu{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+             gap:5em;
+        }
+        .nav a{
+            text-decoration: none;
+           
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            place-items:center;
+            grid-gap: 1em;
+            grid-column-gap: 1em;
+            margin-top: 5em;
+        }
+        .container input{
+            margin-top: 1em;
+            padding: 1em;
+            border-color: rgb(35, 115, 255);
+        }
+        .container .card2{
+            border: none;
+            color: white;
+            background-color: rgb(31, 94, 252);
+            padding: 1em;
+            border-radius: 0.2em;
+            cursor: pointer;
+            width: 14em;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="menu">
+            <a href="#!"><li>Home</li></a>
+            <a href="#!"><li>Products</li></a>
+            <a href="#!"><li>Services</li></a>
+            <a href="#!"><li>About</li></a>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="card1">
+            <h1>Login Page</h1>
+            <input type="text" placeholder="Email Id" >
+        </div>
+        <div class="card1">
+                <input type="text" placeholder="Password" >
+        </div>
+        <div >
+            <button class="card2">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
